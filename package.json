@@ -15,7 +15,11 @@
     "egg-mock": "^3.14.0",
     "eslint": "^4.11.0",
     "eslint-config-egg": "^6.0.0",
-    "webstorm-disable-index": "^1.2.0"
+    "webstorm-disable-index": "^1.2.0",
+    "commitizen": "^2.3.0",
+    "validate-commit-msg": "^2.11.1",
+    "conventional-changelog-cli": "^1.2.0",
+    "husky": "^0.13.1"
   },
   "engines": {
     "node": ">=8.9.0"
@@ -30,7 +34,10 @@
     "cov": "egg-bin cov",
     "lint": "eslint .",
     "ci": "npm run lint && npm run cov",
-    "autod": "autod"
+    "autod": "autod",
+    "commitmsg": "validate-commit-msg",
+    "commit": "git-cz ",
+    "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0"
   },
   "ci": {
     "version": "8"
